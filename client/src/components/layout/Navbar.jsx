@@ -23,16 +23,15 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
   const guestLinks = (
     <ul>
-      <li><Link to="#!">Developers</Link></li>
       <li><Link to="/register">Register</Link></li>
       <li><Link to="/login">Login</Link></li>
     </ul>
   )
 
   return <>
-    <nav className="navbar bg-dark">
+    <nav className="navbar">
         <h1>
-          <Link to="/"><i className="fas fa-code"></i> DevConnector</Link>
+          <Link to="/"><i class="far fa-heart"></i> Heart Nation</Link>
         </h1>
         { !loading && (<>{ isAuthenticated ? authLinks :  guestLinks }</>) }
       </nav>

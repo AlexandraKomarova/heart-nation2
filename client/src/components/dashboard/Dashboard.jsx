@@ -9,9 +9,11 @@ const Dashboard = ({ getCurrentProfile, auth, profile }) => {
   }, [])
 
   return (
-    <div>
-      Dashboard
-    </div>
+    <section className="container">
+      <div className="dash">
+        Welcome to Heart Nation! Our profile section is coming soon!
+      </div>
+    </section>
   )
 }
 
