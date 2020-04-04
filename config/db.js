@@ -1,11 +1,12 @@
 const mongoose = require("mongoose")
 const config = require("config")
 const chalk = require("chalk")
-const db = config.get("mongoURI")
+// const db = config.get("mongoURI")
+require('dotenv').config()
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(db, {
+    await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true, 
       useUnifiedTopology: true,
       useCreateIndex: true,
