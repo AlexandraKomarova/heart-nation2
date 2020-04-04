@@ -1,4 +1,0 @@
-{
-  "MONGODB_URI": "mongodb+srv://heart123:heart123@cluster0-ejdad.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "PayItForward"
-}
