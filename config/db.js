@@ -6,7 +6,7 @@ require('dotenv').config()
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGOLAB_BROWN_URI, {
+    await mongoose.connect(process.env.MONGODB_URI, {
       useNewUrlParser: true, 
       useUnifiedTopology: true,
       useCreateIndex: true,
